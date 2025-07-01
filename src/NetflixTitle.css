@@ -1,0 +1,66 @@
+.netflix-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #141414;
+  overflow: hidden;
+  user-select: none;
+}
+
+.netflix-logo {
+  width: 500px;
+  height: auto;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeIn 0.5s forwards ease-in;
+  margin-bottom: 40px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate.netflix-logo {
+  animation: zoomOut 3s forwards ease-in-out;
+}
+
+@keyframes zoomOut {
+  0%, 80% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.play-button {
+  transition: opacity 1s ease-out;
+}
+
+.play-button:hover {
+  background-color: grey; 
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .netflix-logo {
+    width: 85vw; /* Adjust the width for mobile devices */
+    margin-bottom: 20px; /* Adjust the margin for mobile devices */
+  }
+}
