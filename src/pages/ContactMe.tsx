@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ContactMe.css';
-import profilePic from '../../src/images/1700037267363_1.jpg';
+import profilePic from '../../src/images/pfp.png';
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin, FaCocktail } from 'react-icons/fa';
 import { ContactMe as IContactMe } from '../types';
 // import { getContactMe } from '../queries/getContactMe';

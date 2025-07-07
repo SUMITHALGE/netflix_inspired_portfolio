@@ -29,7 +29,7 @@ import venneloAdapilla from '../images/vennelo_adapilla.jpeg';
     title: "Eat That Frog",
     author: "Brian Tracy",
     imgSrc: eatThatFrog,
-    description: "A motivational book on overcoming procrastination.",
+    description: "A motivational book on overcoming procrastination..",
   },
  ];
 
